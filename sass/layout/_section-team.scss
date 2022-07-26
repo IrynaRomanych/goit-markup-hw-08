@@ -1,0 +1,41 @@
+.team {
+  @extend %section;
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+
+  &__staff {
+    flex-basis: calc((100% - 90px) / 4);
+
+    background-color: var(--primery-bg-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__card {
+    padding: 30px 5px 0;
+  }
+
+  &__member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+
+  &__position {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--paragraph-text-color);
+  }
+}
