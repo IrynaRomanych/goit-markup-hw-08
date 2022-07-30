@@ -5,7 +5,16 @@
 }
 .footer-navigation {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  // align-items: baseline;
+}
+
+.footer__information {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .address {
@@ -13,6 +22,9 @@
 
   &__footer {
     @extend %list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__item:not(:first-child) {

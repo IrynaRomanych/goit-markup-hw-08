@@ -4,11 +4,17 @@
 .clients-list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__item {
-    flex-basis: calc((100% - 150px) / 6);
-    width: 170px;
+    @media screen and (max-width: 479px) {
+      max-width: 210px;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    // flex-basis: calc((100% - 150px) / 6);
+    // max-width: 170px;
   }
 
   &__link {

@@ -1,5 +1,6 @@
 .portfolio {
   @extend %list;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -45,6 +46,8 @@
   }
 
   & > &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    width: 100%;
+    max-width: 450px;
+    // flex-basis: calc((100% - 60px) / 3);
   }
 }

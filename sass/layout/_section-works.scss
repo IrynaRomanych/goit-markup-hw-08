@@ -1,8 +1,12 @@
 .works {
+  display: none;
   @extend %section;
   padding-top: 0;
 }
 .work-list {
+  @media screen and (mim-width: 1200px) {
+    display: block;
+  }
   @extend %list;
   display: flex;
   gap: 30px;

@@ -26,17 +26,32 @@
         <a class="brand-logo brand-logo__page-header" href="/index.html">
           <span>Web</span><span class="brand-logo__item">Studio</span></a
         >
+        <button
+          class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg aria-label="перемикач мобільного меню" class="menu-toggle__icon">
+            <use
+              href="./images/icons.svg#menu-icon"
+              width="40px"
+              height="40px"
+            ></use>
+          </svg>
+        </button>
+
         <nav class="main-navigation">
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студія</a>
-            </li>
-            <li class="site-nav__item">
               <a
                 class="site-nav__link site-nav__link--current"
-                href="./portfolio.html"
-                >Портфоліо</a
+                href="./index.html"
+                >Студія</a
               >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакти</a>
@@ -124,9 +139,8 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/technokriak.jpg"
+                    src="./images/mobile/technokriak@1x.jpg"
                     alt="зразок розробки сайту"
-                    width="370"
                     height="294"
                   />
                   <div class="overlay">
@@ -149,7 +163,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/poster.jpg"
+                    src="./images/mobile/neworlean@1x.jpg"
                     alt=" постер два баскетболісти з м'ячем"
                     width="370"
                     height="294"
@@ -176,7 +190,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/restaurant.jpg"
+                    src="./images/mobile/restaurant@1x.jpg"
                     alt="рисунок рекламы магазина"
                     width="370"
                     height="294"
@@ -201,7 +215,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/projectprime.jpg"
+                    src="./images/mobile/projectprime@1x.jpg"
                     alt="навушики"
                     width="370"
                     height="294"
@@ -226,7 +240,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/projectboxes.jpg"
+                    src="./images/mobile/projectboxes@1x.jpg"
                     alt="дві коробки"
                     width="370"
                     height="294"
@@ -251,7 +265,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/inspiration.jpg"
+                    src="./images/mobile/inspiration@1x.jpg"
                     alt="монітор із зображенням"
                     width="370"
                     height="294"
@@ -278,7 +292,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/journal.jpg"
+                    src="./images/mobile/limitededition@1x.jpg"
                     alt="розгорнутий журнал з ілюстраціями"
                     width="370"
                     height="294"
@@ -305,7 +319,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/projectlab.jpg"
+                    src="./images/mobile/projectlab@1x.jpg"
                     alt="бірки паперові"
                     width="370"
                     height="294"
@@ -330,7 +344,7 @@
               <a class="portfolio__link" href="#">
                 <div class="overlay-box">
                   <img
-                    src="./images/growingbusiness.jpg"
+                    src="./images/mobile/growingbusiness@1x.jpg"
                     alt="работа за ноутбуком"
                     width="370"
                     height="294"
@@ -356,7 +370,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-navigation">
-        <div>
+        <div class="footer__information">
           <a class="brand-logo brand-logo__footer" href="/index.html">
             <span>Web</span
             ><span class="brand-logo__item--light">Studio</span></a
@@ -449,7 +463,7 @@
         <div class="subscribe">
           <h2 class="subscribe__footer-title">Підпишіться на розсилку</h2>
           <form class="form__subscribe form">
-            <label>
+            <label class="form__subscribe-lable">
               <input
                 class="form__subscribe-email"
                 type="email"
@@ -472,5 +486,72 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle menu-toggle__close js-close-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          aria-label="перемикач мобільного меню"
+          class="menu-toggle__close-icon"
+        >
+          <use
+            href="./images/icons.svg#close-menu"
+            width="40px"
+            height="40px"
+          ></use>
+        </svg>
+      </button>
+      <nav class="main-navigation--mobile">
+        <ul class="site-nav--mobile">
+          <li class="site-nav--mobile__item">
+            <a
+              class="site-nav--mobile__link site-nav--mobile__link--current"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="site-nav--mobile__item">
+            <a class="site-nav--mobile__link" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="site-nav--mobile__item">
+            <a class="site-nav--mobile__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="contacts__mobile">
+        <li class="contacts__mobile-items">
+          <a
+            class="contacts__mobile-link contacts__mobile-link--current"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="contacts__mobile-item">
+          <a class="contacts__mobile-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
