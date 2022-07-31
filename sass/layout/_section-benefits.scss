@@ -4,65 +4,68 @@
 
 .benefits-list {
   @extend %list;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 480px) {
-    width: 270px;
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+    width: 100%;
   }
   // display: block;
   // display: flex;
   // flex-direction: column;
   // gap: 30px;
 
-  // &__item {
-  //   @media screen and (max-width: 479px) {
-  //     width: 270px;
-  //   }
-
-  // &__item {
-  //   flex-basis: calc((100% - 90px) / 4);
-  // }
-
   &__item {
-    display: flex;
-    flex-direction: column;
-  }
+    // &__item {
+    //   flex-basis: calc((100% - 90px) / 4);
+    // }
 
-  &__icon {
-    display: flex;
+    // &__item {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
 
-    // max-width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    background-color: var(--secondary-bg-color);
-    align-items: center;
-    justify-content: center;
-  }
+    &__icon {
+      display: flex;
 
-  &__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    background-color: #f5f4fa;
-  }
+      // max-width: 270px;
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      background-color: var(--secondary-bg-color);
+      align-items: center;
+      justify-content: center;
+    }
 
-  &__subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    align-self: center;
-  }
+    &__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      background-color: #f5f4fa;
+    }
 
-  &__text {
-    margin-top: 10px;
+    &__subtitle {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: var(--primary-text-color);
+      align-self: center;
+    }
 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--paragraph-text-color);
+    &__text {
+      margin-top: 10px;
+
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--paragraph-text-color);
+    }
   }
 }
