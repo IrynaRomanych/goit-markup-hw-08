@@ -1,7 +1,6 @@
 .main-title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.61;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
@@ -10,6 +9,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
+    line-height: 1.61;
   }
 }
 
@@ -19,7 +19,6 @@
 
   @media screen and (min-width: 768px) {
     max-width: 360px;
-    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     max-width: 696px;

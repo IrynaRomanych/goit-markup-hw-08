@@ -1,29 +1,94 @@
 .section-hero {
   @extend %section;
-  padding: 118px 0;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/mobile/hero@1x.jpg);
   background-color: var(--hero-footer-background);
-  @media screen and (max-width: 1200px) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 481px) and (min-width: 767px) {
+    padding: 118px 0;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile/header@1x.jpg);
+      url(../../images/mobile/hero@2x.jpg);
+  }
+}
+
+@media (min-width: 481px) {
+  .section-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/tablet/hero@1x.jpg);
   }
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/tablet/hero@2x.jpg);
+    }
+  }
+}
 
-  // padding: 200px 0;
-  // max-width: 1600px;
+@media (min-width: 1024px) {
+  .section-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/desktop/hero@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/desktop/hero@2x.jpg);
+    }
+  }
 }
 
 .hero {
-  // max-width: 1600px;
   display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
   flex-direction: column;
   align-items: center;
-  margin-right: 0;
-  margin-left: 0;
 }
