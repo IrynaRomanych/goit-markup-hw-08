@@ -7,9 +7,9 @@
   @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   max-width: 450px;
+  // }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -65,14 +65,4 @@
     text-decoration-style: none;
     color: var(--paragraph-text-color);
   }
-
-  // & > &__item {
-  //   width: 100%;
-  //   max-width: 450px;
-  //   @media screen and (max-width: 768px) {
-  //     flex-basis: calc((100% - 30px) / 2);
-
-  //     // flex-basis: calc((100% - 60px) / 3);
-  //   }
-  // }
 }
