@@ -16,14 +16,22 @@
 }
 
 .footer__information {
-  margin-bottom: 60px;
   display: flex;
+  margin-bottom: 60px;
   flex-direction: column;
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    // width: 300px;
+    // width: 100%;
+    // flex-direction: row;
+    // margin-bottom: 0;
+    // align-items: flex-start;
   }
 }
 
@@ -35,6 +43,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
 
   &__item:not(:first-child) {
