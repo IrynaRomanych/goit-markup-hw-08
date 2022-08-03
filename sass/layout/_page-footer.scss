@@ -17,8 +17,6 @@
   @media screen and (min-width: 1200px) {
     align-items: baseline;
     text-align: left;
-    // // align-items: flex-start;
-    // justify-content: space-between;
   }
 }
 
@@ -40,6 +38,8 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 .address {
@@ -47,6 +47,11 @@
 
   &__footer {
     @extend %list;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__item:not(:first-child) {

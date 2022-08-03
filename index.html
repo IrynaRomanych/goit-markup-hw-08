@@ -61,7 +61,7 @@
           <li class="contacts__items">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg
-                class="contacts__icon"
+                class="contacts__icon-mail"
                 width="16"
                 height="12"
                 aria-label="наша пошта"
@@ -74,7 +74,7 @@
           <li class="contacts__items">
             <a class="contacts__link" href="tel:+380961111111"
               ><svg
-                class="contacts__icon"
+                class="contacts__icon-phone"
                 width="10"
                 height="16"
                 aria-label="наш телефон"
@@ -258,9 +258,7 @@
               <div class="team-list__card">
                 <h3 class="team-list__member">Ігор Дем'яненко</h3>
                 <p class="team-list__position">Product Designer</p>
-              </div>
-              <div class="socials team__socials">
-                <ul class="socials__list list">
+                <ul class="socials__list">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -356,9 +354,7 @@
               <div class="team-list__card">
                 <h3 class="team-list__member">Ольга Рєпіна</h3>
                 <p class="team-list__position">Frontend Developer</p>
-              </div>
-              <div class="socials">
-                <ul class="socials__list list">
+                <ul class="socials__list">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -456,9 +452,7 @@
               <div class="team-list__card">
                 <h3 class="team-list__member">Микола Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
-              </div>
-              <div class="socials">
-                <ul class="socials__list list">
+                <ul class="socials__list">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -556,8 +550,6 @@
               <div class="team-list__card">
                 <h3 class="team-list__member">Михайло Єрмаков</h3>
                 <p class="team-list__position">UI Designer</p>
-              </div>
-              <div class="socials">
                 <ul class="socials__list">
                   <li class="socials__item">
                     <a
@@ -702,7 +694,7 @@
               </ul>
             </address>
           </div>
-          <div class="socials footer__socials">
+          <div class="footer__socials">
             <h2 class="social__title-footer">приєднуйтесь</h2>
 
             <ul class="socials__list">
@@ -811,53 +803,52 @@
           ></use>
         </svg>
       </button>
-      <nav class="main-navigation--mobile">
-        <ul class="site-nav--mobile">
-          <li class="site-nav--mobile__item">
-            <a
-              class="site-nav--mobile__link site-nav--mobile__link--current"
-              href="./index.html"
-              >Студія</a
-            >
-          </li>
-          <li class="site-nav--mobile__item">
-            <a class="site-nav--mobile__link" href="./portfolio.html"
-              >Портфоліо</a
-            >
-          </li>
-          <li class="site-nav--mobile__item">
-            <a class="site-nav--mobile__link" href="">Контакти</a>
-          </li>
-        </ul>
-        <ul class="contacts__mobile">
-          <li class="contacts__mobile-items">
-            <a
-              class="contacts__mobile-link contacts__mobile-link--current"
-              href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="contacts__mobile-item">
-            <a class="contacts__mobile-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-socials">
-          <li class="mobile-socials__item">
-            <a class="mobile-socials__link" href="#">Instagram</a>
-          </li>
-          <li class="mobile-socials__item">
-            <a class="mobile-socials__link" href="#">Twitter</a>
-          </li>
-          <li class="mobile-socials__item">
-            <a class="mobile-socials__link" href="#">Facebook</a>
-          </li>
-          <li class="mobile-socials__item">
-            <a class="mobile-socials__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
+
+      <ul class="mobile-navigation">
+        <li class="mobile-navigation__item">
+          <a
+            class="mobile-navigation__link mobile-navigation__link--current"
+            href="./index.html"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-navigation__item">
+          <a class="mobile-navigation__link" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-navigation__item">
+          <a class="mobile-navigation__link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="contacts__mobile">
+        <li class="contacts__mobile-items">
+          <a
+            class="contacts__mobile-link contacts__mobile-link--current"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="contacts__mobile-item">
+          <a class="contacts__mobile-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a class="mobile-socials__link" href="#">LinkedIn</a>
+        </li>
+      </ul>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
