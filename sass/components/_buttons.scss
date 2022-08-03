@@ -26,8 +26,6 @@
   &__hero {
     padding: 10px 15px;
     align-self: center;
-
-    // margin: 0 485px;
   }
 
   &__subscribe {
@@ -38,6 +36,7 @@
     align-items: center;
     align-self: center;
     @media screen and (min-width: 1200px) {
+      margin-top: 0;
       margin-left: 12px;
     }
   }
@@ -56,7 +55,6 @@
   &__form {
     display: block;
     margin: 0 auto;
-    // margin: 0 124px;
   }
 }
 
@@ -151,13 +149,19 @@
 }
 
 .menu-toggle {
-  display: inline-block;
-
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   background-color: var(--primery-bg-color);
-  border: none;
   cursor: pointer;
+  border: none;
+  outline: none;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
@@ -168,14 +172,8 @@
     height: 40px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
-  }
-  &__close {
-    &-icon {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-    }
   }
 }

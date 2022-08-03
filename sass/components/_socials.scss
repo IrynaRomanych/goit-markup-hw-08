@@ -58,23 +58,18 @@
   margin-top: 16px;
   padding-right: 32px;
 }
-
 .footer__socials {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 60px;
-  padding: 0;
+  margin-top: 60px;
+  text-align: center;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 50%;
-    margin-bottom: 110px;
+    margin-top: 0;
+    padding: 0 80px;
   }
   @media screen and (min-width: 1200px) {
-    display: block;
-    // margin-left: 70px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -111,14 +106,15 @@
     background-color: var(--icons-color);
   }
 
-  // &__link:last-child::after {
-  //   background-color: transparent;
-  // }
-
   &__item:hover &__link::after {
     background-color: var(--accent-color);
   }
 }
+  //  Нік не можу прибрати after в ост елемента
+
+// &__link:last-child::after {
+//   background-color: transparent;
+// }
 
 // .mobile-socials__link:not(:last-child)::after {
 //   position: absolute;

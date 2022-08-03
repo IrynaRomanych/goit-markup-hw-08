@@ -12,10 +12,6 @@
   @media screen and (max-width: 480px) {
     width: 100%;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-  }
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,7 +34,6 @@
   }
 
   &__avatar {
-    max-width: 450px;
     align-self: center;
   }
 
