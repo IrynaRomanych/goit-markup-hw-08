@@ -696,7 +696,7 @@ body {
 }
 
 .contacts__mobile {
-  margin-top: 210px;
+  margin-top: auto;
   margin-bottom: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
