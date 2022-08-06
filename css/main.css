@@ -123,33 +123,35 @@ body {
 
 .main-button {
   display: inline-block;
-  padding: 10px 30px;
-  border-radius: 4px;
-  border: none;
   width: 200px;
   height: 50px;
+  padding: 10px 30px;
+  font-family: inherit;
   font-weight: 700;
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.06em;
   color: var(--primery-bg-color);
+  text-decoration: none;
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  text-decoration: none;
-  cursor: pointer;
+  border-radius: 4px;
+  border: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .main-button:hover, .main-button:focus {
   background-color: var(--accent-color);
 }
+
 .main-button__hero {
   padding: 10px 15px;
   -ms-flex-item-align: center;
       align-self: center;
 }
+
 .main-button__subscribe {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -169,15 +171,17 @@ body {
     margin-left: 12px;
   }
 }
+.main-button__subscribe ::after {
+  content: "";
+}
+
 .main-button__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   fill: var(--primery-bg-color);
 }
-.main-button__subscribe::after {
-  content: "";
-}
+
 .main-button__form {
   display: block;
   margin: 0 auto;
@@ -887,6 +891,10 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio__link:hover .overlay, .portfolio__link:focus .overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
 .overlay__text {
   margin: 0;
   padding: 77px 24px;
@@ -896,11 +904,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primery-bg-color);
   text-decoration: none;
-}
-@media screen and (min-width: 768px) {
-  .overlay__text {
-    padding: 63px 24px;
-  }
 }
 @media screen and (min-width: 768px) {
   .overlay__text {
@@ -946,7 +949,14 @@ body {
   }
 }
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -957,11 +967,10 @@ body {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-.portfolio__link:hover .overlay {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
 .portfolio__caption {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -973,11 +982,6 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--primary-text-color);
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__caption-title {
-    letter-spacing: 0.03em;
-  }
 }
 .portfolio__caption-bunch {
   margin-top: 4px;
